@@ -1,3 +1,10 @@
- *{
-  color: red;
-};
+h1{
+  background-color: #589389;
+  font-family: cursive;
+  color: #EC0011;
+}
+
+p{
+  font-family:sans-serif;
+  color: black;
+}
