@@ -73,3 +73,24 @@ while(tries < 4){
     console.log('i need blood in my alcohol stream');
   }
 }
+
+var states = ['california', 'florida', 'north carlina'];
+var numGuess = 6;
+
+while(numGuess > 0){
+  var userGuess = prompt("what state have I lived in?").toLowerCase();
+  for(var i = 0; i < states.length; i++){
+    if(userGuess === states[1]){
+      alert('good');
+      numGuess--;
+      break;
+    }
+  }
+  if(numGuess > 0) {
+    numGuess--;
+    alert('keep trying. ' + numGuess + ' tries left.');
+  }
+  if (numGuess === 0){
+    alert('sorry, out of guess');
+  }
+}
