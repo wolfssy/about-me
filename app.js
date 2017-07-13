@@ -1,4 +1,11 @@
 'use strict';
+'use strict';
+alert('Welcome!');
+alert('lets play a guessing game.');
+var tries = 0;
+var correctAnswer = 51;
+
+
 
 var guitar = prompt('Do you think I own a guitar?').toLowerCase()
 if(guitar === 'yes'||guitar === 'y'){
@@ -44,3 +51,25 @@ if(name === 'yes'||name === 'y'){
   alert('ah sorry. i happen to be the exception because I do!')
   console.log('The user gave ' + name);
 };
+
+
+while(tries < 4){
+  var userGuess = prompt('pick a number between 1 and 100');
+  if (userGuess < correctAnswer){
+    alert('too low');
+    tries++;
+    console.log('low');
+  }else if(userGuess > correctAnswer){
+    alert('too high');
+    tries++;
+    console.log('baked');
+  }else if(userGuess == correctAnswer){
+    alert('nice!');
+    tries++;
+    console.log('works fine');
+    break;
+  }if(tries === 4){
+    alert('sorry! maybe next time!');
+    console.log('i need blood in my alcohol stream');
+  }
+}
