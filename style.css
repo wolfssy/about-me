@@ -1,17 +1,26 @@
+  *{
+    width: 940px;
+    margin: auto;
+    border: 3px
 
+  }
 h1{
+  height: 75px;
   background-color: #589389;
   font-family: Georgia, Times, serif;
   font-size: 250%;
   text-shadow: 2px 2px 3px #666666;
   text-align: center;
-
   color: #EC0011;
 }
 
 body {
   font-family: arial;
-  background-color: rgb(18, 179, 175;)
+  font-weight: bold;
+  background-color: #589389;
+  background-image: url("img/punch.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 ul {
@@ -32,6 +41,12 @@ ul {
   margin:0px 0px 0px 0px;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
+
+}
+
+.takeoff{
+  max-width:100%;
+  max-height:100%;
 }
 
 ol.hobbies {
